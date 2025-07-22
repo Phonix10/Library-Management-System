@@ -1,5 +1,7 @@
 package com.system.Library_Management_System.entity;
 
+import com.system.Library_Management_System.enums.BookType;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,7 +28,11 @@ public class Book {
 
     private String genre;
 
-    
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private BookType type;
+
+
 
     
 }
