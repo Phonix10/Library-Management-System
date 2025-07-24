@@ -1,5 +1,7 @@
 package com.system.Library_Management_System.entity;
 
+import java.util.List;
+
 import com.system.Library_Management_System.enums.MembershipType;
 
 import jakarta.persistence.*;
@@ -33,13 +35,8 @@ public class Members {
 
     private double totalFines;
 
-    
-
-
-
-
-
-
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+    private List<Transaction> transactions;
 
     
 }
