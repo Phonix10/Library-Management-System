@@ -24,16 +24,14 @@ public class Book {
     @Column(nullable = false)
     private String author;
 
-    @Column(nullable = false)
     private String publisher;
-    
+
     private String genre;
+
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private BookType type;
-
-
 
     
 }
