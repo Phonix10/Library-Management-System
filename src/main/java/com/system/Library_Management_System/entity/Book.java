@@ -24,8 +24,6 @@ public class Book {
     @Column(nullable = false)
     private String author;
 
-    private String publisher;
-
     private String genre;
 
 
